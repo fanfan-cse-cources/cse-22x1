@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.6" sequence="54" timestamp="1538054422033" analysisTimestamp="1538054421553" release="">
+  <Project projectName="HailstoneRevisited">
+    <Jar>/Users/fanfannnmn/Documents/workspace/HailstoneRevisited/bin/Hailstone1.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/HailstoneRevisited/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/HailstoneRevisited/src</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/HailstoneRevisited/test</SrcDir>
+  </Project>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="27" last="27" removedByChange="true">
+    <Class classname="Hailstone1">
+      <SourceLine classname="Hailstone1" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Class>
+    <Method classname="Hailstone1" name="generateSeries" signature="(Lcomponents/naturalnumber/NaturalNumber;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="Hailstone1" start="54" end="70" startBytecode="0" endBytecode="65" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="59" end="1823" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/naturalnumber/NaturalNumber;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.naturalnumber.NaturalNumber" sourcefile="SourceFile" sourcepath="components/naturalnumber/SourceFile"/>
+    </Type>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Integer" start="1048" end="1050" startBytecode="0" endBytecode="90" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <LocalVariable name="n" register="0" pc="144" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.naturalnumber.NaturalNumberSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.naturalnumber.NaturalNumberSecondary" start="200" end="210" startBytecode="0" endBytecode="123" sourcefile="SourceFile" sourcepath="components/naturalnumber/SourceFile"/>
+    </Method>
+    <SourceLine classname="Hailstone1" start="58" end="58" startBytecode="147" endBytecode="147" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    <SourceLine classname="Hailstone1" start="58" end="58" startBytecode="147" endBytecode="147" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="23" last="23" removedByChange="true">
+    <Class classname="Hailstone1">
+      <SourceLine classname="Hailstone1" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Class>
+    <Method classname="Hailstone1" name="generateSeries" signature="(Lcomponents/naturalnumber/NaturalNumber;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="Hailstone1" start="54" end="70" startBytecode="0" endBytecode="63" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="59" end="1823" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/naturalnumber/NaturalNumber;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.naturalnumber.NaturalNumber" sourcefile="SourceFile" sourcepath="components/naturalnumber/SourceFile"/>
+    </Type>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Integer" start="1048" end="1050" startBytecode="0" endBytecode="90" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="components.naturalnumber.NaturalNumber" name="divide" signature="(Lcomponents/naturalnumber/NaturalNumber;)Lcomponents/naturalnumber/NaturalNumber;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.naturalnumber.NaturalNumber" sourcefile="SourceFile" sourcepath="components/naturalnumber/SourceFile"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.naturalnumber.NaturalNumberSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.naturalnumber.NaturalNumberSecondary" start="200" end="210" startBytecode="0" endBytecode="123" sourcefile="SourceFile" sourcepath="components/naturalnumber/SourceFile"/>
+    </Method>
+    <SourceLine classname="Hailstone1" start="60" end="60" startBytecode="53" endBytecode="53" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    <SourceLine classname="Hailstone1" start="60" end="60" startBytecode="53" endBytecode="53" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="2" rank="18" abbrev="UPM" category="PERFORMANCE" first="15">
+    <Class classname="Hailstone1">
+      <SourceLine classname="Hailstone1" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Class>
+    <Method classname="Hailstone1" name="generateSeries" signature="(ILcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="Hailstone1" start="32" end="42" startBytecode="0" endBytecode="191" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="2" rank="18" abbrev="UPM" category="PERFORMANCE" first="1" last="14" removedByChange="true">
+    <Class classname="Hailstone1">
+      <SourceLine classname="Hailstone1" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Class>
+    <Method classname="Hailstone1" name="generateSeries" signature="(Lcomponents/naturalnumber/NaturalNumber;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="Hailstone1" start="61" end="61" startBytecode="0" endBytecode="41" sourcefile="Hailstone1.java" sourcepath="Hailstone1.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 27 Sep 2018 09:20:21 -0400" total_classes="1" referenced_classes="18" total_bugs="1" total_size="46" num_packages="1" java_version="10.0.2" vm_version="10.0.2+13" cpu_seconds="3.28" clock_seconds="0.48" peak_mbytes="480.71" alloc_mbytes="1024.00" gc_seconds="0.03" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="46" priority_2="1">
+      <ClassStats class="Hailstone1" sourceFile="Hailstone1.java" interface="false" size="46" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="161" invocations="346" avgMicrosecondsPerInvocation="467" maxMicrosecondsPerInvocation="19029" standardDeviationMicrosecondsPerInvocation="1513"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="112" invocations="2" avgMicrosecondsPerInvocation="56074" maxMicrosecondsPerInvocation="104618" standardDeviationMicrosecondsPerInvocation="48543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="33" invocations="18" avgMicrosecondsPerInvocation="1876" maxMicrosecondsPerInvocation="15080" standardDeviationMicrosecondsPerInvocation="4098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="16" invocations="311" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="1345" standardDeviationMicrosecondsPerInvocation="126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="15" invocations="347" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="277" standardDeviationMicrosecondsPerInvocation="38"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="13" invocations="18" avgMicrosecondsPerInvocation="775" maxMicrosecondsPerInvocation="4931" standardDeviationMicrosecondsPerInvocation="1239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="12" invocations="53" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="741" standardDeviationMicrosecondsPerInvocation="168"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1537967635875" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1537967635878" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1537967637948" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1537967799737" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1537967801685" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1537967809787" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1537967811032" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1537967817523" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1537967818490" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1537967870221" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1537967871266" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1537968056876" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1537968066636" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1537968073602" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1537968167184" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1537968436792" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1537968472336" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1537968474387" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1537968496834" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1537968522237" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1537968550752" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1537968551906" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1537968914385" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1537968916494" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1537968967660" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1537968991787" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1537969068561" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1537969093947" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1537969115159" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1537969160957" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1537969378611" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1537969484836" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1537969535228" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1537969875277" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1537970126881" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1537970149297" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1537970233481" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1537970346142" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1537970452150" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1537970557276" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1537970567263" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1537970584158" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1537970617911" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1537970699847" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1537970742773" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1537970754214" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1537970895705" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1537970950703" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1537970964712" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1537970975829" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1537971030619" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1537971071812" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1538054400875" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1538054403472" release="" codeSize="46" numClasses="1"/>
+  </History>
+</BugCollection>

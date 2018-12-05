@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.6" sequence="45" timestamp="1536328474219" analysisTimestamp="1536328473976" release="">
+  <Project projectName="ProjectTemplate">
+    <Jar>/Users/fanfannnmn/Documents/workspace/ProjectTemplate/bin/CheckPassword.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/ProjectTemplate/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/ProjectTemplate/src</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/ProjectTemplate/test</SrcDir>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="10" last="12" removedByChange="true">
+    <Class classname="CheckPassword">
+      <SourceLine classname="CheckPassword" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    </Class>
+    <Method classname="CheckPassword" name="checkPassword" signature="(Ljava/lang/String;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="CheckPassword" start="34" end="39" startBytecode="0" endBytecode="99" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    </Method>
+    <Method classname="CheckPassword" name="containsUpperCaseLetter" signature="(Ljava/lang/String;)Z" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="CheckPassword" start="49" end="57" startBytecode="0" endBytecode="137" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    </Method>
+    <SourceLine classname="CheckPassword" start="36" end="36" startBytecode="13" endBytecode="13" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    <SourceLine classname="CheckPassword" start="36" end="36" startBytecode="13" endBytecode="13" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="4" last="8" removedByChange="true">
+    <Class classname="CheckPassword">
+      <SourceLine classname="CheckPassword" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    </Class>
+    <Method classname="CheckPassword" name="containsUpperCaseLetter" signature="(Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="CheckPassword" start="49" end="55" startBytecode="0" endBytecode="128" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="isUpperCase" signature="(C)Z" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="8414" end="8414" startBytecode="0" endBytecode="46" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="CheckPassword" start="52" end="52" startBytecode="12" endBytecode="12" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+    <SourceLine classname="CheckPassword" start="52" end="52" startBytecode="12" endBytecode="12" sourcefile="CheckPassword.java" sourcepath="CheckPassword.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 7 Sep 2018 09:54:33 -0400" total_classes="1" referenced_classes="17" total_bugs="0" total_size="80" num_packages="1" java_version="10.0.2" vm_version="10.0.2+13" cpu_seconds="1.01" clock_seconds="0.24" peak_mbytes="631.36" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="80">
+      <ClassStats class="CheckPassword" sourceFile="CheckPassword.java" interface="false" size="80" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="82" invocations="341" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="6143" standardDeviationMicrosecondsPerInvocation="560"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="59" invocations="2" avgMicrosecondsPerInvocation="29684" maxMicrosecondsPerInvocation="55755" standardDeviationMicrosecondsPerInvocation="26071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="48" invocations="17" avgMicrosecondsPerInvocation="2831" maxMicrosecondsPerInvocation="43225" standardDeviationMicrosecondsPerInvocation="10108"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1535127965086" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1535127965086" release="" codeSize="38" numClasses="4"/>
+    <AppVersion sequence="2" timestamp="1536325411149" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1536325492109" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1536325885022" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1536325921378" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1536325930599" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1536325950582" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1536325960640" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1536326052845" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1536326118891" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1536326126586" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1536326152798" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1536326163351" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1536326191113" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1536326290541" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1536326312023" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1536326326670" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1536326336325" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1536326385842" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1536326405145" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1536326425570" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1536326440003" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1536326606803" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1536326710537" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1536326725668" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1536326767039" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1536326771707" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1536326785541" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1536326987267" release="" codeSize="75" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1536327011103" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1536327052502" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1536327178981" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1536327238249" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1536327307018" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1536327308998" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1536327368466" release="" codeSize="81" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1536327493892" release="" codeSize="81" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1536327508984" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1536327572047" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1536327603399" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1536327612075" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1536327616128" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1536327639107" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1536327676964" release="" codeSize="80" numClasses="1"/>
+  </History>
+</BugCollection>

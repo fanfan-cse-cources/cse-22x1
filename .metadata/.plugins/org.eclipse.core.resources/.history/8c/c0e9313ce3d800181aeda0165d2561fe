@@ -1,0 +1,160 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import components.naturalnumber.NaturalNumber;
+import components.naturalnumber.NaturalNumber2;
+
+/**
+ * JUnit test fixture for toStringWithCommas.
+ *
+ * @author Yifan Yao
+ *
+ */
+
+public final class ToStringWithCommasTest {
+    /**
+     * Test toStringWithCommaTest with input 1(Boundary).
+     */
+    @Test
+    public void toStringWithCommaTest1() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 1;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "1";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 10(Boundary).
+     */
+    @Test
+    public void toStringWithCommaTest10() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 10;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "10";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 100(Boundary).
+     */
+    @Test
+    public void toStringWithCommaTest100() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 100;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "100";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 1000(Boundary).
+     */
+    @Test
+    public void toStringWithCommaTest1000() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 1000;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "1,000";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 1200(Routine).
+     */
+    @Test
+    public void toStringWithCommaTest1200() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 1200;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "1,200";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 1389(Routine/Challenging).
+     */
+    @Test
+    public void toStringWithCommaTest1389() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 1389;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "1,389";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 999999(Routine/Challenging).
+     */
+    @Test
+    public void toStringWithCommaTest999999() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 999999;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "999,999";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+    /**
+     * Test toStringWithCommaTest with input 9999999(Routine/Challenging).
+     */
+    @Test
+    public void toStringWithCommaTest9999999() {
+        /*
+         * Set up variables and call method under test
+         */
+        final int number = 9999999;
+        NaturalNumber n = new NaturalNumber2(number);
+        String expect = "9,999,999";
+        String output = NaturalNumberStaticOps.toStringWithCommas(n);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(expect, output);
+    }
+
+}

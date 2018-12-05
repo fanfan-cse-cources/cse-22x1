@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.8" sequence="82" timestamp="1542211151771" analysisTimestamp="1542211151607" release="">
+  <Project projectName="PizzaOrderManager">
+    <Jar>/Users/fanfannnmn/Documents/workspace/PizzaOrderManager/bin/PizzaOrderManager.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/PizzaOrderManager/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/PizzaOrderManager/test</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/PizzaOrderManager/src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="74" last="74" removedByChange="true">
+    <Class classname="PizzaOrderManager">
+      <SourceLine classname="PizzaOrderManager" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Class>
+    <Method classname="PizzaOrderManager" name="putPrice" signature="(Lcomponents/simplewriter/SimpleWriter;I)V" isStatic="true">
+      <SourceLine classname="PizzaOrderManager" start="150" end="159" startBytecode="0" endBytecode="50" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Method>
+    <LocalVariable name="cents" register="3" pc="73" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="PizzaOrderManager" start="155" end="155" startBytecode="72" endBytecode="72" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <SourceLine classname="PizzaOrderManager" start="155" end="155" startBytecode="72" endBytecode="72" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="cents"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="76" last="76" removedByChange="true">
+    <Class classname="PizzaOrderManager">
+      <SourceLine classname="PizzaOrderManager" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Class>
+    <Method classname="PizzaOrderManager" name="putPrice" signature="(Lcomponents/simplewriter/SimpleWriter;I)V" isStatic="true">
+      <SourceLine classname="PizzaOrderManager" start="150" end="161" startBytecode="0" endBytecode="56" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Method>
+    <LocalVariable name="hundred" register="5" pc="85" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="PizzaOrderManager" start="157" end="157" startBytecode="83" endBytecode="83" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <SourceLine classname="PizzaOrderManager" start="157" end="157" startBytecode="83" endBytecode="83" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="hundred"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="76" last="76" removedByChange="true">
+    <Class classname="PizzaOrderManager">
+      <SourceLine classname="PizzaOrderManager" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Class>
+    <Method classname="PizzaOrderManager" name="putPrice" signature="(Lcomponents/simplewriter/SimpleWriter;I)V" isStatic="true">
+      <SourceLine classname="PizzaOrderManager" start="150" end="161" startBytecode="0" endBytecode="56" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Method>
+    <LocalVariable name="tenth" register="4" pc="79" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="PizzaOrderManager" start="156" end="156" startBytecode="77" endBytecode="77" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <SourceLine classname="PizzaOrderManager" start="156" end="156" startBytecode="77" endBytecode="77" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tenth"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="64" last="72" removedByChange="true">
+    <Class classname="PizzaOrderManager">
+      <SourceLine classname="PizzaOrderManager" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Class>
+    <Method classname="PizzaOrderManager" name="putPrice" signature="(Lcomponents/simplewriter/SimpleWriter;I)V" isStatic="true">
+      <SourceLine classname="PizzaOrderManager" start="150" end="159" startBytecode="0" endBytecode="197" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    </Method>
+    <SourceLine classname="PizzaOrderManager" start="155" end="155" startBytecode="75" endBytecode="75" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+    <SourceLine classname="PizzaOrderManager" start="155" end="155" startBytecode="75" endBytecode="75" sourcefile="PizzaOrderManager.java" sourcepath="PizzaOrderManager.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 10:59:11 -0500" total_classes="1" referenced_classes="19" total_bugs="0" total_size="67" num_packages="1" java_version="11.0.1" vm_version="11.0.1+13-LTS" cpu_seconds="0.27" clock_seconds="0.17" peak_mbytes="896.96" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="67">
+      <ClassStats class="PizzaOrderManager" sourceFile="PizzaOrderManager.java" interface="false" size="67" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="58" invocations="349" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="2748" standardDeviationMicrosecondsPerInvocation="338"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="42" invocations="2" avgMicrosecondsPerInvocation="21234" maxMicrosecondsPerInvocation="39658" standardDeviationMicrosecondsPerInvocation="18424"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1542204812384" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1542204812384" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1542204918793" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1542204935664" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1542205241799" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1542205425783" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1542205556922" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1542205615479" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1542205623067" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1542205744153" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1542205768270" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1542205779964" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1542205981261" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1542206014022" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1542206037617" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1542206071359" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1542206119686" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1542206127234" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1542206239878" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1542206296648" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1542206315602" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1542206322657" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1542206361604" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1542206371384" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1542206373404" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1542206379611" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1542206417159" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1542206482401" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1542206529623" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1542206571739" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1542206645938" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1542206687341" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1542206697221" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1542206699463" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1542206704066" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1542206706780" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1542206786245" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1542206788390" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1542206797026" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1542206942673" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1542206975421" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1542207002590" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1542207011146" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1542207013628" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1542207173530" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1542207181636" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1542207207511" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1542207224385" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1542207237179" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1542207265736" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1542207299696" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1542207342585" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1542207347268" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1542207509284" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="54" timestamp="1542207516579" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="55" timestamp="1542207518576" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="56" timestamp="1542207534227" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="57" timestamp="1542207546033" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="58" timestamp="1542208216658" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="59" timestamp="1542208286119" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="60" timestamp="1542208304716" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="61" timestamp="1542208320899" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="62" timestamp="1542208338320" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="63" timestamp="1542208357768" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="64" timestamp="1542208392144" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="65" timestamp="1542208414375" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="66" timestamp="1542208417739" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="67" timestamp="1542208424461" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="68" timestamp="1542208436503" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="69" timestamp="1542208459796" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="70" timestamp="1542208464002" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="71" timestamp="1542208467454" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="72" timestamp="1542208495638" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="73" timestamp="1542208505255" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="74" timestamp="1542208564134" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="75" timestamp="1542208568496" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="76" timestamp="1542208635436" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="77" timestamp="1542208643176" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="78" timestamp="1542208771597" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="79" timestamp="1542208809237" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="80" timestamp="1542208905541" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="81" timestamp="1542208925230" release="" codeSize="67" numClasses="1"/>
+  </History>
+</BugCollection>

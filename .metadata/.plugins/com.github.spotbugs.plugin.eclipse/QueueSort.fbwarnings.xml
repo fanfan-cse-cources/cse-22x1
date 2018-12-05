@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.8" sequence="10" timestamp="1541773626376" analysisTimestamp="1541773626185" release="">
+  <Project projectName="QueueSort">
+    <Jar>/Users/fanfannnmn/Documents/workspace/QueueSort/bin/Queue1LSort1.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/QueueSort/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/QueueSort/test</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/QueueSort/src</SrcDir>
+  </Project>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="3">
+    <Class classname="QueueSortMain$StringLT">
+      <SourceLine classname="QueueSortMain$StringLT" start="1" end="23" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    </Class>
+    <SourceLine classname="QueueSortMain$StringLT" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="StringLT.java" sourcepath="StringLT.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 9 Nov 2018 09:27:06 -0500" total_classes="1" referenced_classes="30" total_bugs="1" total_size="27" num_packages="1" java_version="11.0.1" vm_version="11.0.1+13-LTS" cpu_seconds="0.84" clock_seconds="0.19" peak_mbytes="646.38" alloc_mbytes="1024.00" gc_seconds="0.01" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="2" total_size="27" priority_2="1">
+      <ClassStats class="Queue1LSort1" sourceFile="Queue1LSort1.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="87" invocations="409" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="14470" standardDeviationMicrosecondsPerInvocation="844"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="44" invocations="2" avgMicrosecondsPerInvocation="22442" maxMicrosecondsPerInvocation="41858" standardDeviationMicrosecondsPerInvocation="19416"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1541773235703" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1541773235703" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1541773239029" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1541773251732" release="" codeSize="49" numClasses="2"/>
+    <AppVersion sequence="4" timestamp="1541773255040" release="" codeSize="49" numClasses="2"/>
+    <AppVersion sequence="5" timestamp="1541773472423" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1541773487379" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1541773495461" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1541773524438" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1541773536170" release="" codeSize="27" numClasses="1"/>
+  </History>
+</BugCollection>

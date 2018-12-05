@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.8" sequence="5" timestamp="1541165385688" analysisTimestamp="1541165385500" release="">
+  <Project projectName="PerformanceExperiments">
+    <Jar>/Users/fanfannnmn/Documents/workspace/PerformanceExperiments/bin/NaturalNumber2SlowPower.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/PerformanceExperiments/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/PerformanceExperiments/test</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/PerformanceExperiments/src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 2 Nov 2018 09:29:45 -0400" total_classes="1" referenced_classes="31" total_bugs="0" total_size="47" num_packages="1" java_version="11.0.1" vm_version="11.0.1+13-LTS" cpu_seconds="0.63" clock_seconds="0.19" peak_mbytes="944.07" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="47">
+      <ClassStats class="NaturalNumber2SlowPower" sourceFile="NaturalNumber2SlowPower.java" interface="false" size="47" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="65" invocations="377" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="6201" standardDeviationMicrosecondsPerInvocation="443"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="45" invocations="2" avgMicrosecondsPerInvocation="22762" maxMicrosecondsPerInvocation="42057" standardDeviationMicrosecondsPerInvocation="19295"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1541164439565" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1541164439565" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1541165247042" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1541165261801" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1541165371726" release="" codeSize="34" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feeds title="Top Stories">
+  <feed url="https://abcnews.go.com/abcnews/topstories" name="ABC News: Top Stories"
+    file="abc.html" />
+  <feed url="https://www.cbsnews.com/latest/rss/main" name="Breaking News: CBS News"
+    file="cbs.html" />
+  <feed url="https://www.yahoo.com/news/rss" name="Yahoo News"
+    file="yahoo.html" />
+</feeds>

@@ -1,0 +1,29 @@
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+        SimpleReader input;
+        SimpleWriter output;
+        String yourName;
+        int yourAge;
+        input = new SimpleReader1L();
+        output = new SimpleWriter1L();
+        output.print("What is your name? ");
+        yourName = input.nextLine();
+        output.print("What is your age? ");
+        yourAge = input.nextInteger();
+        output.println("Hi " + yourName);
+        if ((13 <= yourAge) || (yourAge <= 18)) {
+            output.println("Oh no! A teenager!");
+            output.println("So sorry!");
+        } else {
+            output.println(
+                    "Congratulations! " + yourAge + " is a fine age to be!");
+        }
+        input.close();
+        output.close();
+    }
+}

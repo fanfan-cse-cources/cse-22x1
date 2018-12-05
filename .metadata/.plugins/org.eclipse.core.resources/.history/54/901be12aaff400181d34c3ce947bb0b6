@@ -1,0 +1,39 @@
+import components.stack.Stack;
+
+/**
+ * Model class.
+ *
+ * @author Bruce W. Weide
+ * @author Paolo Bucci
+ */
+public final class AppendUndoModel1 implements AppendUndoModel {
+
+    /**
+     * Model variables.
+     */
+    private String input;
+    private Stack<String> output;
+
+    /**
+     * Default constructor.
+     */
+    public AppendUndoModel1() {
+
+    }
+
+    @Override
+    public void setInput(String input) {
+        this.input = output.pop(input);
+    }
+
+    @Override
+    public String input() {
+        return this.input;
+    }
+
+    @Override
+    public Stack<String> output() {
+        return this.output;
+    }
+
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.9" sequence="3" timestamp="1543417510264" analysisTimestamp="1543417509535" release="">
+  <Project projectName="DemoGUI1">
+    <Jar>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI1/bin/DemoGUI.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI1/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI1/src</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI1/test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 28 Nov 2018 10:05:09 -0500" total_classes="1" referenced_classes="287" total_bugs="0" total_size="61" num_packages="1" java_version="11.0.1" vm_version="11.0.1+13-LTS" cpu_seconds="1.96" clock_seconds="0.73" peak_mbytes="825.30" alloc_mbytes="1024.00" gc_seconds="0.04">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="61">
+      <ClassStats class="DemoGUI" sourceFile="DemoGUI.java" interface="false" size="61" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="254" invocations="1543" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="17420" standardDeviationMicrosecondsPerInvocation="706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="77" invocations="287" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="4909" standardDeviationMicrosecondsPerInvocation="553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="71" invocations="287" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="3230" standardDeviationMicrosecondsPerInvocation="466"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="50" invocations="2" avgMicrosecondsPerInvocation="25133" maxMicrosecondsPerInvocation="38781" standardDeviationMicrosecondsPerInvocation="13648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="39" invocations="620" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="588" standardDeviationMicrosecondsPerInvocation="64"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="29" invocations="287" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="14435" standardDeviationMicrosecondsPerInvocation="851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="26" invocations="1547" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="119" standardDeviationMicrosecondsPerInvocation="9"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1543417503029" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1543417503029" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1543417506595" release="" codeSize="61" numClasses="1"/>
+  </History>
+</BugCollection>

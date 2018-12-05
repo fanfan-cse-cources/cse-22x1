@@ -1,0 +1,44 @@
+import components.queue.Queue;
+import components.queue.Queue1L;
+
+/**
+ * Layered implementations of secondary method {@code sort} for
+ * {@code Queue<String>}.
+ */
+public final class Queue1LRotate extends Queue1L<String> {
+
+    /**
+     * No-argument constructor.
+     */
+    public Queue1LRotate() {
+        super();
+    }
+
+    /**
+     * Rotates {@code this}.
+     *
+     * @param distance
+     *            distance by which to rotate
+     * @updates this
+     * @ensures <pre>
+     * if #this = <> then
+     *  this = #this
+     * else
+     *  this = #this[distance mod |#this|, |#this|) * #this[0, distance mod |#this|)
+     * </pre>
+     */
+    @Override
+    public void rotate(int distance) {
+        assert distance != null : "Violation of: distance is not null";
+
+        Queue<String> temp = this.newInstance();
+
+        temp.transferFrom(this);
+        while (temp.length() > 0) {
+            String min = removeMin(temp, order);
+            this.enqueue(min);
+        }
+
+    }
+
+}

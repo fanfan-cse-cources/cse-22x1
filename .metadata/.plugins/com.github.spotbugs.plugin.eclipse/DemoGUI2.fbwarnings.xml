@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.9" sequence="1" timestamp="1543415336759" analysisTimestamp="1543415336405" release="">
+  <Project projectName="DemoGUI2">
+    <Jar>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI2/bin/DemoGUI.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI2/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse Java.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI2/src</SrcDir>
+    <SrcDir>/Users/fanfannnmn/Downloads/2221/examples/DemoGUI2/test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 28 Nov 2018 09:28:56 -0500" total_classes="1" referenced_classes="14" total_bugs="0" total_size="10" num_packages="1" java_version="11.0.1" vm_version="11.0.1+13-LTS" cpu_seconds="1.76" clock_seconds="0.35" peak_mbytes="557.10" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="DemoGUI" sourceFile="DemoGUI.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="186" invocations="334" avgMicrosecondsPerInvocation="558" maxMicrosecondsPerInvocation="10141" standardDeviationMicrosecondsPerInvocation="1238"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="88" invocations="2" avgMicrosecondsPerInvocation="44489" maxMicrosecondsPerInvocation="83278" standardDeviationMicrosecondsPerInvocation="38789"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1543415336759" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

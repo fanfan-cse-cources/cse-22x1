@@ -1,0 +1,33 @@
+import java.util.Comparator;
+
+import components.queue.Queue;
+import components.queue.Queue1L;
+
+/**
+ * Layered implementations of secondary method {@code sort} for
+ * {@code Queue<String>}.
+ */
+public final class Queue1LRotate extends Queue1L<String> {
+
+    /**
+     * No-argument constructor.
+     */
+    public Queue1LRotate() {
+        super();
+    }
+
+    @Override
+    public void sort(Comparator<String> order) {
+        assert order != null : "Violation of: order is not null";
+
+        Queue<String> temp = this.newInstance();
+
+        temp.transferFrom(this);
+        while (temp.length() > 0) {
+            String min = removeMin(temp, order);
+            this.enqueue(min);
+        }
+
+    }
+
+}

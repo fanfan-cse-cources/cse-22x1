@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Hailstone1.java&apos; to &apos;Hailstone1.java&apos;&#x0A;- Original project: &apos;RecursionOnHailstone&apos;&#x0A;- Destination element: &apos;Hailstone1.java&apos;&#x0A;- Original element: &apos;Hailstone1.java&apos;" description="Copy compilation unit" destination="/src&lt;{Hailstone1.java" element1="/src&lt;{Hailstone1.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1540675663761" units="1" version="1.0"/>
+</session>

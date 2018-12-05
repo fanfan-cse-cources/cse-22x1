@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;HailstoneRevisited&apos;&#x0A;- Original project: &apos;HailstoneRevisited&apos;&#x0A;- Original elements:&#x0A;     Hailstone2.java&#x0A;     Hailstone3.java&#x0A;     Hailstone4.java" description="Delete elements" element1="/src&lt;{Hailstone3.java" element2="/src&lt;{Hailstone4.java" element3="/src&lt;{Hailstone2.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1538054269974" subPackages="false" version="1.0"/>
+</session>

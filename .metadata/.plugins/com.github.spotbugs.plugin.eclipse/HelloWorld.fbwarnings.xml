@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.6" sequence="3" timestamp="1535118049367" analysisTimestamp="1535118049050" release="">
+  <Project projectName="HelloWorld">
+    <Jar>/Users/fanfannnmn/Documents/workspace/HelloWorld/bin/HelloWorld.class</Jar>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/HelloWorld/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/fanfannnmn/Documents/workspace/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/fanfannnmn/Documents/workspace/HelloWorld/src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 24 Aug 2018 09:40:49 -0400" total_classes="1" referenced_classes="14" total_bugs="0" total_size="9" num_packages="1" java_version="10.0.2" vm_version="10.0.2+13" cpu_seconds="1.92" clock_seconds="0.32" peak_mbytes="843.71" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="HelloWorld" sourceFile="HelloWorld.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="128" invocations="329" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="28477" standardDeviationMicrosecondsPerInvocation="1655"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="91" invocations="2" avgMicrosecondsPerInvocation="45740" maxMicrosecondsPerInvocation="85493" standardDeviationMicrosecondsPerInvocation="39753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="13" invocations="295" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="1275" standardDeviationMicrosecondsPerInvocation="103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="12" invocations="14" avgMicrosecondsPerInvocation="928" maxMicrosecondsPerInvocation="6232" standardDeviationMicrosecondsPerInvocation="1628"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1535117972320" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1535117972320" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1535118044971" release="" codeSize="9" numClasses="1"/>
+  </History>
+</BugCollection>
