@@ -1,0 +1,24 @@
+IF next-is-enemy THEN
+  skip
+END IF
+
+IF next-is-friend THEN
+  infect
+ELSE
+  turnright
+END IF
+
+WHILE true DO
+  move
+  infect
+  skip
+  turnleft
+END WHILE
+
+IF next-is-not-friend THEN
+skip
+ELSE
+infect
+END IF
+
+move

@@ -1,0 +1,40 @@
+PROGRAM Test IS
+
+INSTRUCTION one IS
+move
+turnright
+skip
+infect
+turnleft
+END one
+
+INSTRUCTION two IS
+IF next-is-not-wall THEN
+infect
+WHILE true DO
+skip
+turnright
+move
+END WHILE
+END IF
+END two
+
+BEGIN
+one
+WHILE random DO
+turnright
+IF next-is-enemy THEN
+skip
+skip
+skip
+move
+ELSE
+turnleft
+two
+END IF
+infect
+move
+END WHILE
+move
+turnleft
+END Test

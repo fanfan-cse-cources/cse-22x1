@@ -1,0 +1,19 @@
+turnright
+IF true THEN
+skip
+move
+move
+move
+move
+move
+infect
+WHILE random DO
+turnright
+skip
+turnleft
+move
+infect
+move
+END WHILE
+skip
+END IF

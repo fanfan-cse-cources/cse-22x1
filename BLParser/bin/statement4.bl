@@ -1,0 +1,14 @@
+IF random THEN
+turnright
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+skip
+END IF

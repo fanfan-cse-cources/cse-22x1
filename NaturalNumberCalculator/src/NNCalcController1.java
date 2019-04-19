@@ -44,21 +44,9 @@ public final class NNCalcController1 implements NNCalcController {
         NaturalNumber top = model.top();
         NaturalNumber bottom = model.bottom();
 
-        /*
-         * Negative result is not permitted for NaturalNumber
-         */
         view.updateSubtractAllowed(top.compareTo(bottom) >= 0);
-
-        /*
-         * Power is not permitted to exceed INT_LIMIT
-         */
-        view.updatePowerAllowed(bottom.compareTo(INT_LIMIT) <= 0);
-
-        /*
-         * Divisor must not be 0, root must be at least 2. Root must not exceed
-         * INT_LIMIT
-         */
         view.updateDivideAllowed(!bottom.isZero());
+        view.updatePowerAllowed(bottom.compareTo(INT_LIMIT) <= 0);
         view.updateRootAllowed(
                 bottom.compareTo(TWO) >= 0 && bottom.compareTo(INT_LIMIT) <= 0);
 

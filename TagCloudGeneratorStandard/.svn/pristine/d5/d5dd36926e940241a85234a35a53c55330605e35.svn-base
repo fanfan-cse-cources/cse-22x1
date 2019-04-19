@@ -1,0 +1,368 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Serializable;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Set;
+
+/**
+ * Generates a tag cloud from a given input text in a given input file and
+ * outputs an HTML document in alphabetical order by using Java Standard
+ * Library.
+ *
+ * @author Yifan Yao, Yueyi Hua
+ *
+ */
+public final class TagCloudGeneratorStandard {
+
+    /**
+     * Private constructor so this utility class cannot be instantiated.
+     */
+    private TagCloudGeneratorStandard() {
+    }
+
+    /**
+     * Compare {@code Map.Pair<String, Integer>}s by decreasing order by value.
+     */
+    private static class PairVLT
+            implements Comparator<Map.Entry<String, Integer>>, Serializable {
+        /**
+         * Serial Version UID.
+         */
+        private static final long serialVersionUID = 7754005071605462314L;
+
+        @Override
+        public int compare(Map.Entry<String, Integer> p1,
+                Map.Entry<String, Integer> p2) {
+            Integer i1 = p1.getValue();
+            Integer i2 = p2.getValue();
+            return i2.compareTo(i1);
+        }
+    }
+
+    /**
+     * Generates the set of characters in the given {@code String} into the
+     * given {@code Set}.
+     *
+     * @param str
+     *            the given {@code String}
+     * @param strSet
+     *            the {@code Set} to be replaced
+     * @replaces strSet
+     * @ensures strSet = entries(str)
+     */
+    public static void generateElements(String str, Set<Character> strSet) {
+        assert str != null : "Violation of: str is not null";
+        assert strSet != null : "Violation of: strSet is not null";
+
+        Set<Character> newSet = new HashSet<Character>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char character = str.charAt(i);
+
+            if (!newSet.contains(character)) {
+                newSet.add(character);
+            }
+        }
+
+        strSet.addAll(newSet);
+        newSet.clear();
+    }
+
+    /**
+     * Justify the String is digit or not.
+     *
+     * @param str
+     *            the given {@code String}
+     * @return is digit or not
+     */
+    public static boolean isDigit(String str) {
+        assert str != null : "Violation of: str is not null";
+
+        boolean result = true;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isDigit(str.charAt(i))) {
+                result = false;
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Returns the first "word" (maximal length string of characters not in
+     * {@code separators}) or "separator string" (maximal length string of
+     * characters in {@code separators}) in the given {@code text} starting at
+     * the given {@code position}.
+     *
+     * @param text
+     *            the {@code String} from which to get the word or separator
+     *            string
+     * @param position
+     *            the starting index
+     * @param separators
+     *            the {@code Set} of separator characters
+     * @return the first word or separator string found in {@code text} starting
+     *         at index {@code position}
+     * @requires 0 <= position < |text|
+     * @ensures <pre>
+     * nextWordOrSeparator =
+     *   text[position, position + |nextWordOrSeparator|)  and
+     * if entries(text[position, position + 1)) intersection separators = {}
+     * then
+     *   entries(nextWordOrSeparator) intersection separators = {}  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      intersection separators /= {})
+     * else
+     *   entries(nextWordOrSeparator) is subset of separators  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      is not subset of separators)
+     * </pre>
+     */
+    public static String nextWordOrSeparator(String text, int position,
+            Set<Character> separators) {
+        assert text != null : "Violation of: text is not null";
+        assert separators != null : "Violation of: separators is not null";
+        assert 0 <= position : "Violation of: 0 <= position";
+        assert position < text.length() : "Violation of: position < |text|";
+
+        int counter = position;
+        boolean contains = separators.contains(text.charAt(position));
+        while (counter < text.length()
+                && (contains == separators.contains(text.charAt(counter)))) {
+            counter++;
+        }
+
+        return text.substring(position, counter);
+    }
+
+    /**
+     * Add words into the Map(when word not exist) or increment the value.
+     *
+     * @param text
+     *            word
+     * @param words
+     *            Map contain words
+     * @update words
+     * @ensure words = {Word}
+     *
+     */
+    public static void addWordOrValue(String text, Map<String, Integer> words) {
+        String lText = text.toLowerCase();
+
+        if (words.containsKey(lText)) {
+            int value = words.get(lText);
+
+            value++;
+            words.replace(lText, value);
+        } else {
+            words.put(lText, 1);
+        }
+    }
+
+    /**
+     * Generate html file from Map.
+     *
+     * @param words
+     *            Map contain words
+     * @param size
+     *            number of words to be included in the generated tag cloud
+     * @param inputFile
+     *            path for input file
+     * @param outputFile
+     *            path for output file
+     */
+    public static void generateHTML(Map<String, Integer> words, int size,
+            String inputFile, String outputFile) {
+
+        PrintWriter fileOut;
+        final String css = "https://cse.aws.fanfanishere.org/cse-2231/tagcloud.css";
+        final int maxFontSize = 48;
+        final int minFontSize = 11;
+        final int enlargeFactor = 5;
+
+        Map<String, Integer> output = new HashMap<String, Integer>();
+        int totalWords = 0;
+
+        try {
+            fileOut = new PrintWriter(
+                    new BufferedWriter(new FileWriter(outputFile)));
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+            return;
+        }
+
+        /*
+         * Sort words via Map on Queue
+         */
+        Queue<Map.Entry<String, Integer>> q = new PriorityQueue<Entry<String, Integer>>(
+                new PairVLT());
+
+        /*
+         * Put each pair into SortingMachine, and generate a new Map with font
+         * size
+         */
+        for (Map.Entry<String, Integer> x : words.entrySet()) {
+            q.add(x);
+            output.put(x.getKey(), x.getValue());
+        }
+
+        // Sort words by alphabet order
+        final Comparator<String> cs = String.CASE_INSENSITIVE_ORDER;
+        Queue<String> w = new PriorityQueue<String>(cs);
+
+        for (int i = 0; i < size; i++) {
+            Map.Entry<String, Integer> x = q.remove();
+            totalWords += x.getValue();
+            w.add(x.getKey());
+        }
+
+        final int enlargeWeight = totalWords / size;
+
+        for (Map.Entry<String, Integer> x : output.entrySet()) {
+            int classifiedValue = x.getValue() * enlargeFactor / enlargeWeight;
+
+            classifiedValue += minFontSize;
+            if (classifiedValue > maxFontSize) {
+                classifiedValue = maxFontSize;
+            } else if (classifiedValue < minFontSize) {
+                classifiedValue = minFontSize;
+            }
+            output.replace(x.getKey(), classifiedValue);
+        }
+
+        fileOut.println("<html>");
+        fileOut.println("<head>");
+        fileOut.println("<title>Top 100 words in " + inputFile + "</title>");
+        fileOut.println("<link href=\"" + css
+                + "\" rel=\"stylesheet\" type=\"text/css\">");
+        fileOut.println("</head>");
+        fileOut.println("<body>");
+        fileOut.println("<h2>Top 100 words in " + inputFile + "</h2>");
+        fileOut.println("<hr />");
+        fileOut.println("<div class=\"cdiv\">");
+        fileOut.println("<p class=\"cbox\">");
+        for (int i = 0; i < size; i++) {
+            String outputWord = w.remove();
+
+            fileOut.println("<span style=\"cursor:default\" class=\"f"
+                    + output.get(outputWord) + "\" title=\"count:"
+                    + words.get(outputWord) + "\">" + outputWord + "</span>");
+        }
+        fileOut.println("</p>");
+        fileOut.println("</div>");
+        fileOut.println("</body>");
+        fileOut.println("</html>");
+        fileOut.close();
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments
+     */
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        /*
+         * Define separator characters for test
+         */
+        final String separatorStr = " \t\n\r,-.!?[]';:/()";
+        Set<Character> separatorSet = new HashSet<Character>();
+        generateElements(separatorStr, separatorSet);
+
+        /*
+         * Declare input/output file and number of words to be included in the
+         * generated tag cloud
+         */
+        String inputFile = "";
+        BufferedReader fileIn;
+        try {
+            System.out.print("Input file: ");
+            inputFile = scan.nextLine();
+            while (inputFile.isEmpty()) {
+                System.out.print("Input file: ");
+                inputFile = scan.nextLine();
+            }
+            fileIn = new BufferedReader(new FileReader(inputFile));
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+            scan.close();
+            return;
+        }
+
+        System.out.print("Output file: ");
+        String outputFile = scan.nextLine();
+        while (outputFile.isEmpty()) {
+            System.out.print("Output file: ");
+            outputFile = scan.nextLine();
+        }
+
+        String sizeS = "";
+        boolean validNumber = false;
+
+        while (sizeS.isEmpty() || !validNumber) {
+            System.out.print("Number of words: ");
+            sizeS = scan.nextLine();
+            validNumber = isDigit(sizeS);
+        }
+        int size = Integer.parseInt(sizeS);
+
+        /*
+         * Put words into Map and generate html file
+         */
+        Map<String, Integer> words = new HashMap<String, Integer>();
+
+        try {
+            String token = fileIn.readLine();
+
+            while (token != null) {
+                int pos = 0;
+
+                while (pos < token.length()) {
+                    String word = nextWordOrSeparator(token, pos, separatorSet);
+                    if (!separatorSet.contains(word.charAt(0))) {
+                        if (!isDigit(word)) {
+                            addWordOrValue(word, words);
+                        }
+                    }
+                    pos += word.length();
+                }
+                token = fileIn.readLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+
+        generateHTML(words, size, inputFile, outputFile);
+        System.out.println("\nYour tag cloud has been generated successfully.");
+
+        /*
+         * Close input and output streams
+         */
+        try {
+            fileIn.close();
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+
+        scan.close();
+        System.exit(0);
+    }
+
+}

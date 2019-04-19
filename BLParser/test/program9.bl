@@ -1,0 +1,18 @@
+PROGRAM Test IS
+
+INSTRUCTION one IS
+IF true THEN
+go-for-it
+ELSE
+skip
+END IF
+END one
+
+BEGIN
+IF next-is-enemy THEN
+one
+WHILE true DO
+skip
+END WHILE
+END IF
+END Test

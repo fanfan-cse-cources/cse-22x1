@@ -1,0 +1,5 @@
+IF random 
+turnright
+ELSE
+turnleft
+END IF

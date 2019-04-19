@@ -1,0 +1,42 @@
+PROGRAM Test2 IS
+
+  INSTRUCTION one IS
+     turnright
+  END one
+  
+  INSTRUCTION two IS
+    move
+    turnleft
+  END two
+
+    INSTRUCTION three IS
+    skip
+    move
+    infect
+    END three
+    
+    INSTRUCTION four IS
+    IF next-is-friend THEN
+    move
+    END IF
+    WHILE next-is-wall DO
+    skip
+    END WHILE
+    END four
+
+
+BEGIN
+  WHILE next-is-wall DO
+    three
+    four
+  WHILE random DO
+  two
+  IF next-is-empty THEN
+  one
+  ELSE
+  three
+  END IF
+  END WHILE
+  END WHILE
+  
+END Test2

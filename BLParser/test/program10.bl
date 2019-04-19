@@ -1,0 +1,23 @@
+PROGRAM Test IS
+
+INSTRUCTION one IS
+skip
+move
+infect
+look-for-something
+go-for-it
+turnleft
+turnback
+turnright
+END one
+
+BEGIN
+IF next-is-wall THEN
+one
+ELSE
+skip
+END IF
+WHILE random DO
+one
+END WHILE
+END Test

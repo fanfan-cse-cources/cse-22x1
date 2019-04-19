@@ -1,0 +1,38 @@
+turnleft
+
+IF random THEN
+infect
+turnright
+ELSE
+skip
+END IF
+
+WHILE true DO
+move
+turnleft
+turnleft
+END WHILE
+
+WHILE next-is-enemy DO
+skip
+
+IF next-is-wall THEN
+move
+turnleft
+move
+ELSE
+turnright
+END IF
+
+WHILE random DO
+infect
+END WHILE
+
+END WHILE
+
+IF random THEN
+skip
+END IF
+
+turnback
+

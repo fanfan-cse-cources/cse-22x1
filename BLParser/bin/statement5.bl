@@ -1,0 +1,13 @@
+WHILE next-is-enemy DO
+skip
+move
+infect
+turnright
+turnleft
+turnback
+IF true THEN
+go-for-it
+skip
+END IF
+move
+END WHILE

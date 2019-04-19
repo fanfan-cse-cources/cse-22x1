@@ -1,0 +1,29 @@
+PROGRAM Test1 IS
+
+  INSTRUCTION one IS
+     move
+  END one
+  
+  INSTRUCTION two IS
+    turnleft
+  END two
+
+    INSTRUCTION three IS
+    IF next-is-empty THEN
+    infect
+    ELSE
+    skip
+    END IF
+    END three
+
+BEGIN
+  WHILE true DO
+    one
+    IF next-is-enemy THEN
+    two
+    END IF
+    IF next-is-empty THEN
+    three
+    END IF
+  END WHILE
+END Test1

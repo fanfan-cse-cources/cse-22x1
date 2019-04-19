@@ -211,22 +211,12 @@ public class CryptoUtilitiesTest {
     }
 
     @Test
-    public void testIsWitnessToCompositeness_7_24() {
-        NaturalNumber w = new NaturalNumber2(7);
+    public void testIsWitnessToCompositeness_25_24() {
+        NaturalNumber w = new NaturalNumber2(25);
         NaturalNumber n = new NaturalNumber2(24);
         boolean result = CryptoUtilities.isWitnessToCompositeness(w, n);
-        assertEquals("7", w.toString());
+        assertEquals("25", w.toString());
         assertEquals("24", n.toString());
-        assertTrue(result);
-    }
-
-    @Test
-    public void testIsWitnessToCompositeness_77_387() {
-        NaturalNumber w = new NaturalNumber2(77);
-        NaturalNumber n = new NaturalNumber2(387);
-        boolean result = CryptoUtilities.isWitnessToCompositeness(w, n);
-        assertEquals("77", w.toString());
-        assertEquals("387", n.toString());
-        assertTrue(result);
+        assertTrue(!result);
     }
 }

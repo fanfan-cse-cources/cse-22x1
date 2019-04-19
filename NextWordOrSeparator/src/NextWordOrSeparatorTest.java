@@ -9,7 +9,7 @@ import components.simplewriter.SimpleWriter1L;
  * Program to test static methods {@code generateElements} and
  * {@code nextWordOrSeparator}.
  *
- * @author Put your name here
+ * @author Yifan Yao
  *
  */
 public final class NextWordOrSeparatorTest {
